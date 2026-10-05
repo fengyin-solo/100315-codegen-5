@@ -21,6 +21,8 @@ const Roadway = () => import('@/views/roadway/index.vue')
 const Monitorstation = () => import('@/views/monitorstation/index.vue')
 const Certificate = () => import('@/views/certificate/index.vue')
 const Emergencydrill = () => import('@/views/emergencydrill/index.vue')
+const Contractor = () => import('@/views/contractor/index.vue')
+const Workticket = () => import('@/views/workticket/index.vue')
 
 const router = createRouter({
   history: createWebHistory(),
@@ -46,6 +48,8 @@ const router = createRouter({
     { path: '/monitorstation', name: 'monitorstation', component: Monitorstation },
     { path: '/certificate', name: 'certificate', component: Certificate },
     { path: '/emergencydrill', name: 'emergencydrill', component: Emergencydrill },
+    { path: '/contractor', name: 'contractor', component: Contractor },
+    { path: '/workticket', name: 'workticket', component: Workticket },
   ],
 })
 

@@ -268,3 +268,27 @@ class EmergencydrillEntry(BaseModel):
     field_5: str | None = None  # 演练评估
     field_6: str | None = None  # 改进措施
     field_7: str | None = None  # 演练状态
+
+class ContractorEntry(BaseModel):
+    """外委队伍明细结构。"""
+
+    field_0: str | None = None  # 统一社会信用代码
+    field_1: str | None = None  # 队伍名称
+    field_2: str | None = None  # 归属单位
+    field_3: str | None = None  # 资质证书编号
+    field_4: str | None = None  # 资质到期日
+    field_5: str | None = None  # 安全协议编号
+    field_6: str | None = None  # 协议到期日
+    field_7: str | None = None  # 进场时间
+
+class WorkticketEntry(BaseModel):
+    """作业票明细结构。"""
+
+    field_0: str | None = None  # 作业票编号
+    field_1: str | None = None  # 统一社会信用代码
+    field_2: str | None = None  # 队伍名称
+    field_3: str | None = None  # 作业地点
+    field_4: str | None = None  # 作业内容
+    field_5: str | None = None  # 计划日期
+    field_6: str | None = None  # 作业票状态
+    field_7: str | None = None  # 备注
