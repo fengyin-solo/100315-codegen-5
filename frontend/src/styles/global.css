@@ -33,3 +33,31 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.success-text { color: #067647; }
+
+/* 外委准入 / 作业票 */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 10px; font-size: 12px; border: 1px solid var(--border); white-space: nowrap; }
+.badge.ok { color: #067647; border-color: #abefc6; background: #ecfdf3; }
+.badge.warn { color: #b54708; border-color: #fedf89; background: #fffaeb; }
+.badge.bad { color: #b42318; border-color: #fecdca; background: #fef3f2; }
+.badge.idle { color: var(--muted); background: #f8fafc; }
+.identity-bar { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 8px 12px; margin-bottom: 12px; font-size: 13px; }
+.identity-bar .muted { color: var(--muted); }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, .45); display: flex; align-items: center; justify-content: center; z-index: 20; }
+.modal { background: #fff; border-radius: 10px; padding: 16px 18px; width: 560px; max-width: 92vw; max-height: 82vh; overflow: auto; }
+.modal h3 { margin: 0 0 10px; font-size: 15px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.form-grid label { font-size: 12px; color: var(--muted); display: flex; flex-direction: column; gap: 4px; }
+.form-grid input, .form-grid select { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.form-grid .span-2 { grid-column: span 2; }
+.modal-foot { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+.filter-bar select, .filter-bar input { padding: 6px 8px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.review-list { display: flex; flex-direction: column; gap: 8px; }
+.review-item { border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 12px; }
+.review-item .review-head { display: flex; justify-content: space-between; margin-bottom: 4px; }
+.review-item .review-materials { color: var(--muted); }
+.todo-list { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; min-width: 320px; }
+.todo-list li { font-size: 12px; display: flex; gap: 6px; align-items: flex-start; }
+.todo-list .todo-time { color: var(--muted); white-space: nowrap; }
+.operator-select { padding: 2px 6px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; }
+.hint-text { color: var(--muted); font-size: 12px; }

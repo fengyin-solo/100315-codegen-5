@@ -30,6 +30,9 @@ class Store:
     def overview(self) -> dict[str, object]:
         modules: list[dict[str, object]] = []
         for name in self.module_names():
+            # 带下划线的是主模块的附属表（审核留痕、备案记录等），不单独上概览看板
+            if "_" in name:
+                continue
             rows = self.rows(name)
             modules.append({
                 "name": name,
